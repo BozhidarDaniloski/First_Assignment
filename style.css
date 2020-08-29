@@ -1,0 +1,286 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background-color: #4c6e97;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+button:hover {
+  background-color: lightblue;
+  font-size: 2.5rem;
+}
+
+/* NAV Section with HERO */
+
+.main-head {
+  background-color: #131c27;
+  color: white;
+}
+
+nav {
+  width: 75%;
+  padding: 2rem;
+  text-decoration-style: none;
+  position: fixed;
+}
+
+nav ul li {
+  float: right;
+  transform: translate(400px, -100px);
+  list-style: none;
+  margin: 15px 30px;
+  clear: left;
+}
+
+#logo {
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+
+.main-head img {
+  height: 40px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/beach-vacation-trip.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+.loc img {
+  transform: translateX(-10px);
+}
+
+.ben img {
+  transform: translateX(-10px);
+}
+
+.con img {
+  transform: translateX(-10px);
+}
+
+/* Benefits Section */
+.benefits {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url(./img/holiday.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 55%;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  align-content: space-between;
+}
+
+.card img {
+  height: 100px;
+}
+
+.card {
+  margin: 2rem 5rem;
+  flex: 1 1 20rem;
+  min-height: 40vh;
+  text-align: center;
+  padding: 1rem;
+  color: black;
+  box-shadow: 0px 10px 10px black;
+  color: #131c27;
+  background: lightblue;
+}
+
+.card h4 {
+  margin: 1rem;
+}
+#top-rated {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Footer */
+
+.footer img {
+  position: relative;
+  height: 40px;
+}
+
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  background-color: lightsteelblue;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 25px;
+  top: 150px;
+  right: 300px;
+  position: relative;
+}
+
+.foot ul li {
+  position: relative;
+  float: left;
+  list-style: none;
+  margin: 2rem;
+  right: -200px;
+  top: -80px;
+  font-size: 25px;
+}
+
+.nav-down img {
+  width: 40px;
+  height: 40px;
+  margin: 2rem;
+}
+
+.nav-down li:hover {
+  color: #4c6e97;
+  cursor: pointer;
+}
+
+#first-form {
+  display: inline-block;
+  transform: translate(400px, -115px);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button2 {
+  position: relative;
+  top: -88px;
+  left: 370px;
+  padding: 1.3rem 3rem;
+  background-color: #4c6e97;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.button2:hover {
+  background-color: lightblue;
+  font-size: 2.5rem;
+}
+
+.footer h1 {
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+  position: relative;
+  top: 130px;
+}
+
+.pic img {
+  top: 40px;
+  right: -20px;
+}
+
+#logo2 {
+  top: 40px;
+  right: -20px;
+  display: inline-block;
+}
+
+/* Media Query*/
+
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+    justify-content: center;
+  }
+}
