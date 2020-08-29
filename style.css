@@ -92,7 +92,7 @@ nav ul li {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), transparent),
     url(./img/beach-vacation-trip.jpg);
   min-height: 90vh;
   background-repeat: no-repeat;
@@ -272,15 +272,38 @@ select {
 
 /* Media Query*/
 
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 900px) {
   html {
     font-size: 45%;
   }
-  nav {
-    text-align: center;
+  body {
+    overflow-x: hidden;
+  }
+  nav li {
+    float: none;
+    text-align: left;
+    width: 98%;
+  }
+  footer ul li {
+    float: none;
+    width: 98%;
+    text-align: left;
+  }
+
+  #first-form {
+    transform: translateX(100px);
   }
   #logo {
     padding: 1rem;
     justify-content: center;
+  }
+  .footer p {
+    text-align: center;
+    right: -10px;
+    transform: translateY(-30px);
+  }
+
+  .button2 {
+    transform: translate(-100px, 20px);
   }
 }
