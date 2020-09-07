@@ -74,11 +74,15 @@ nav {
   position: fixed;
 }
 
+nav ul {
+  display: inline-block;
+  transform: translate(1100px, -50px);
+}
+
 nav ul li {
-  float: right;
-  transform: translate(400px, -100px);
+  display: inline-block;
   list-style: none;
-  margin: 15px 30px;
+  margin: 15px 50px;
   clear: left;
 }
 
@@ -126,8 +130,9 @@ nav ul li {
 .benefits {
   background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
     url(./img/holiday.jpg);
-  min-height: 90vh;
+
   width: 90%;
+  max-height: auto;
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -147,7 +152,8 @@ nav ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 55%;
+  max-width: 900px;
+  max-height: 1300px;
   margin: auto;
   position: relative;
   align-items: center;
@@ -189,24 +195,30 @@ nav ul li {
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
   background-color: lightsteelblue;
+  border-bottom: 1px solid #3b3b3b;
+  height: 43vh;
 }
 
 .footer p {
   text-align: center;
   font-size: 25px;
-  top: 150px;
-  right: 300px;
-  position: relative;
+  transform: translateY(150px);
+}
+
+.foot {
+  max-height: 200px;
 }
 
 .foot ul li {
-  position: relative;
-  float: left;
+  display: inline-block;
   list-style: none;
   margin: 2rem;
-  right: -200px;
-  top: -80px;
+
   font-size: 25px;
+}
+.nav-down {
+  display: inline-block;
+  transform: translate(200px, -60px);
 }
 
 .nav-down img {
@@ -222,7 +234,7 @@ nav ul li {
 
 #first-form {
   display: inline-block;
-  transform: translate(400px, -115px);
+  transform: translate(1100px, -220px);
 }
 
 input[type="text"],
@@ -254,27 +266,24 @@ select {
   font-size: 2.5rem;
 }
 
-.footer h1 {
-  font-family: "Pattaya", sans-serif;
-  font-weight: normal;
-  position: relative;
-  top: 130px;
-}
-
 .pic img {
   top: 40px;
   right: -20px;
 }
 
-#logo2 {
-  top: 40px;
-  right: -20px;
-  display: inline-block;
+.travelly {
+  font-size: 25px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  transform: translateY(40px);
+  font-family: "Pattaya", sans-serif;
 }
 
 /* Media Query*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (min-width: 320px) {
   html {
     font-size: 45%;
   }
@@ -282,18 +291,27 @@ select {
     overflow-x: hidden;
   }
   nav li {
-    float: none;
-    text-align: left;
-    width: 98%;
+    width: 58%;
+    transform: translate(-900px, -40px);
+    display: inline-block;
+  }
+
+  .main-head {
+    position: relative;
+  }
+  .footer {
+    height: 100vw;
+    position: relative;
   }
   footer ul li {
-    float: none;
     width: 98%;
     text-align: left;
   }
 
   #first-form {
-    transform: translateX(100px);
+    transform: translate(100px, -100px);
+    align-items: center;
+    position: absolute;
   }
   #logo {
     padding: 1rem;
@@ -302,7 +320,7 @@ select {
   .footer p {
     text-align: center;
     right: -10px;
-    transform: translateY(-30px);
+    transform: translateY(80px);
   }
 
   .button2 {
